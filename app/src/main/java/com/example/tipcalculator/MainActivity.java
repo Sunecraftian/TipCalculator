@@ -35,8 +35,12 @@ public class MainActivity extends AppCompatActivity {
         num_of_people_edit = binding.numOfPeopleEdit;
 
         binding.calculateButton.setOnClickListener(v -> {
-            total_per_person = String.format("Total Per Person: $%.2f", calculate_tip());
-            total_per_person_view.setText(total_per_person);
+            try {
+                total_per_person = String.format("Total Per Person: $%.2f", calculate_tip());
+                total_per_person_view.setText(total_per_person);
+            } catch (Exception e) {
+                total_per_person_view.setText("Invalid Fields!");
+            }
         });
     }
 
