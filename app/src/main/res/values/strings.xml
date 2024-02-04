@@ -1,3 +1,8 @@
 <resources>
     <string name="app_name">TipCalculator</string>
+    <string name="total_bill">Total Bill:</string>
+    <string name="tip_percentage">Tip_Percentage:</string>
+    <string name="num_of_people">Number of People:</string>
+    <string name="calculate">Calculate</string>
+    <string name="total_per_person_default">Total Per Person: $0.00</string>
 </resources>
